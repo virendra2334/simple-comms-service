@@ -22,7 +22,7 @@ public class TwilioCommunicationService implements SMSCommunicationService {
                 .creator(
                         new PhoneNumber("+9036191582"),
                         new PhoneNumber(context.getPhoneNumber().getRawPhoneNumber()),
-                        "This is the ship that made the Kessel Run in fourteen parsecs?"
+                        context.getMessage()
                 )
                 .create();
     }
